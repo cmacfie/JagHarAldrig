@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:icon="@android:drawable/ic_menu_save"
+        android:key="saveSuggestions"
+        android:title="Save Suggestions Automatically" />
+    <Preference
+        android:defaultValue="@array/pref_example_list_titles"
+        android:entries="@array/pref_sync_frequency_titles"
+        android:icon="@android:drawable/ic_delete"
+        android:key="multi_suggestions_list"
+        android:title="Delete Suggestions" />
+    <Preference
+        android:defaultValue="@array/pref_example_list_titles"
+        android:entries="@array/pref_sync_frequency_titles"
+        android:icon="@android:drawable/ic_menu_help"
+        android:key="standardSuggestions"
+        android:title="Fill With Standard Suggestions" />
+</PreferenceScreen>
