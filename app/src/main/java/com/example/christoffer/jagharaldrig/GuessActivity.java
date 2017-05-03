@@ -39,37 +39,37 @@ public class GuessActivity extends AppCompatActivity {
     public void chooseAnswer(View view){
         topText.setTextColor(0xFF000000);
         bottomText.setTextColor(0xFF000000);
-        if(topIsCorrect){
-            topText.setBackground( getResources().getDrawable(R.drawable.my_border));
-            bottomText.setBackground( getResources().getDrawable(R.drawable.my_border_wrong));
+        /*if(topIsCorrect){
+            topText.setBackground( getResources().getDrawable(R.drawable.my_border_correct_selected));
+            bottomText.setBackground( getResources().getDrawable(R.drawable.my_border_wrong_selected));
         } else {
-            bottomText.setBackground( getResources().getDrawable(R.drawable.my_border));
+            bottomText.setBackground( getResources().getDrawable(R.drawable.my_border_correct_selected));
             topText.setBackgroundColor(0xFFA3181C);
-        }
+        }*/
         if(view.getId() == R.id.topStoryText){
             bottomText.setClickable(false);
             if(topIsCorrect){
-                topText.setBackground( getResources().getDrawable(R.drawable.my_border));
-                //bottomText.setBackgroundColor(0xFFA3181C); //Sätt röd
+                topText.setBackground( getResources().getDrawable(R.drawable.my_border_correct_selected));
+                bottomText.setBackground(getResources().getDrawable(R.drawable.my_border_wrong)); //Sätt röd
                 topText.setClickable(false);
                 Toast.makeText(this, "Korrekt!", Toast.LENGTH_LONG).show();
             } else {
-                topText.setBackground( getResources().getDrawable(R.drawable.my_border_wrong));
-                bottomText.setBackgroundColor(0xFFeaff80); //Sätt grön
+                topText.setBackground( getResources().getDrawable(R.drawable.my_border_wrong_selected));
+                bottomText.setBackground(getResources().getDrawable(R.drawable.my_border_correct)); //Sätt grön
                 topText.setClickable(false);
                 Toast.makeText(this, "Fel!", Toast.LENGTH_LONG).show();
             }
         } else {
             topText.setClickable(false);
             if(bottomisCorrect){
-                bottomText.setBackground( getResources().getDrawable(R.drawable.my_border));
-                //topText.setBackgroundColor(0xFFA3181C); //Sätt röd
+                bottomText.setBackground( getResources().getDrawable(R.drawable.my_border_correct_selected));
+                topText.setBackground(getResources().getDrawable(R.drawable.my_border_wrong)); //Sätt röd
                 bottomText.setClickable(false);
                 Toast.makeText(this, "Korrekt!", Toast.LENGTH_LONG).show();
 
             } else {
-                bottomText.setBackground( getResources().getDrawable(R.drawable.my_border_wrong));
-                topText.setBackgroundColor(0xFFeaff80); //Sätt grön
+                bottomText.setBackground( getResources().getDrawable(R.drawable.my_border_wrong_selected));
+                topText.setBackground(getResources().getDrawable(R.drawable.my_border_correct)); //Sätt grön
                 bottomText.setClickable(false);
                 Toast.makeText(this, "Fel!", Toast.LENGTH_LONG).show();
             }
