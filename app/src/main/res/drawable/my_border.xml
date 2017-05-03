@@ -4,7 +4,7 @@ android:shape="rectangle" >
 
 <!-- View background color -->
 <solid
-    android:color="#51e72d" >
+    android:color="@color/PistageGreen" >
 </solid>
 
 <!-- View border color and width -->
