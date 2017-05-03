@@ -50,12 +50,12 @@ public class GuessActivity extends AppCompatActivity {
             bottomText.setClickable(false);
             if(topIsCorrect){
                 topText.setBackground( getResources().getDrawable(R.drawable.my_border));
-                bottomText.setBackgroundColor(0xFFA3181C); //Sätt röd
+                //bottomText.setBackgroundColor(0xFFA3181C); //Sätt röd
                 topText.setClickable(false);
                 Toast.makeText(this, "Korrekt!", Toast.LENGTH_LONG).show();
             } else {
                 topText.setBackground( getResources().getDrawable(R.drawable.my_border_wrong));
-                bottomText.setBackgroundColor(0xFF51E72D); //Sätt grön
+                bottomText.setBackgroundColor(0xFFeaff80); //Sätt grön
                 topText.setClickable(false);
                 Toast.makeText(this, "Fel!", Toast.LENGTH_LONG).show();
             }
@@ -63,13 +63,13 @@ public class GuessActivity extends AppCompatActivity {
             topText.setClickable(false);
             if(bottomisCorrect){
                 bottomText.setBackground( getResources().getDrawable(R.drawable.my_border));
-                topText.setBackgroundColor(0xFFA3181C); //Sätt röd
+                //topText.setBackgroundColor(0xFFA3181C); //Sätt röd
                 bottomText.setClickable(false);
                 Toast.makeText(this, "Korrekt!", Toast.LENGTH_LONG).show();
 
             } else {
                 bottomText.setBackground( getResources().getDrawable(R.drawable.my_border_wrong));
-                topText.setBackgroundColor(0xFF51E72D); //Sätt grön
+                topText.setBackgroundColor(0xFFeaff80); //Sätt grön
                 bottomText.setClickable(false);
                 Toast.makeText(this, "Fel!", Toast.LENGTH_LONG).show();
             }
